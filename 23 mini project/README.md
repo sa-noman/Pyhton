@@ -36,9 +36,9 @@ A collection of small Python projects focused on programming fundamentals, probl
 Each mini project is a standalone Python file:
 
 ```bash
-python 10-mini-projects/number_guessing.py
-python 10-mini-projects/expense_tracker.py
-python 10-mini-projects/countdown_timer.py
+python 23 mini project/number_guessing.py
+python 23 mini project/expense_tracker.py
+python 23 mini project/countdown_timer.py
 ```
 
 ## Optional Dependencies
@@ -46,5 +46,5 @@ python 10-mini-projects/countdown_timer.py
 A few desktop, audio, screenshot, recording, and weather projects use third-party packages:
 
 ```bash
-pip install -r 10-mini-projects/requirements.txt
+pip install -r 23 mini project/requirements.txt
 ```

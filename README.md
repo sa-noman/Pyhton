@@ -20,6 +20,7 @@ A structured collection of Python fundamentals, practice programs, and beginner-
 | 08 Exceptions | safe input and error handling |
 | 09 Standard Library | random, secrets, pathlib |
 | 10 Mini Projects | expense tracker and to-do app |
+| Automation Project | 10 practical automation projects for messaging, testing, search, email, backup, and hotword detection |
 
 ## Repository Structure
 
@@ -35,6 +36,17 @@ python-fundamentals/
 ├── 08-exceptions/
 ├── 09-standard-library/
 ├── 10-mini-projects/
+├── Automation Project/
+│   ├── 01-instagram-messages/
+│   ├── 02-facebook-birthday-post/
+│   ├── 03-birthday-mail/
+│   ├── 04-software-testing/
+│   ├── 05-google-search/
+│   ├── 06-linkedin-connections/
+│   ├── 07-facebook-bulk-posting/
+│   ├── 08-automated-email-messages/
+│   ├── 09-automate-backup/
+│   └── 10-hotword-detection/
 ├── tests/
 ├── .github/workflows/tests.yml
 └── README.md
@@ -59,3 +71,12 @@ The goal of this repository is to build strong Python programming fundamentals t
 ## Existing Early Exercises
 
 The original `average.py` and `temperature.py` files are kept as early learning exercises and historical progress.
+
+
+## Automation Projects
+
+The `Automation Project` folder contains 10 independently implemented Python automation projects inspired by common real-world automation ideas. They cover social messaging workflows, birthday automation, automated software testing, browser search, email, backups, and hotword detection.
+
+Social and messaging examples are designed with dry-run, explicit-send, manual-review, or managed-account controls so they can be studied safely without accidental posting or messaging.
+
+See [Automation Project/README.md](./Automation%20Project/README.md) for the full project list and usage notes.

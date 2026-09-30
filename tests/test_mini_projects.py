@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1] / "10-mini-projects"
+ROOT = Path(__file__).resolve().parents[1] / "23 mini project"
 
 def load(name, filename):
     spec = importlib.util.spec_from_file_location(name, ROOT / filename)

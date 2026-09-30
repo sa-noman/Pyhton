@@ -25,7 +25,7 @@ factorial = load("factorial", "04-functions/factorial_recursive.py")
 palindrome = load("palindrome", "05-strings/palindrome_checker.py")
 files = load("files", "06-file-handling/file_word_counter.py")
 bank = load("bank", "07-oop/bank_account.py")
-expenses = load("expenses", "10-mini-projects/expense_tracker.py")
+expenses = load("expenses", "23 mini project/expense_tracker.py")
 
 
 class FundamentalTests(unittest.TestCase):

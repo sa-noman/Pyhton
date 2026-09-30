@@ -33,18 +33,12 @@ A collection of small Python projects focused on programming fundamentals, probl
 
 ## Run a Project
 
-Most projects can be run directly:
+Each mini project is a standalone Python file:
 
 ```bash
-python 10-mini-projects/01-number-guessing/main.py
-```
-
-The original standalone projects can be run with:
-
-```bash
+python 10-mini-projects/number_guessing.py
 python 10-mini-projects/expense_tracker.py
-python 10-mini-projects/todo_cli.py
-python 10-mini-projects/contact_book.py
+python 10-mini-projects/countdown_timer.py
 ```
 
 ## Optional Dependencies

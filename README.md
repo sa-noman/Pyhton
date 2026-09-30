@@ -35,7 +35,7 @@ python-fundamentals/
 ├── 07-oop/
 ├── 08-exceptions/
 ├── 09-standard-library/
-├── 10-mini-projects/
+├── 23 mini project/
 ├── Automation Project/
 ├── tests/
 ├── .github/workflows/tests.yml
@@ -44,9 +44,9 @@ python-fundamentals/
 
 ## Mini Projects
 
-The `10-mini-projects` folder contains 26 projects covering games, utilities, PDF comparison, emoji conversion, audio and screen tools, notifications, weather, attendance tracking, receipts, timers, task management, and more.
+The `23 mini project` folder contains 26 projects covering games, utilities, PDF comparison, emoji conversion, audio and screen tools, notifications, weather, attendance tracking, receipts, timers, task management, and more.
 
-See [10-mini-projects/README.md](./10-mini-projects/README.md) for the complete project list and usage notes.
+See [23 mini project/README.md](./23%20mini%20project/README.md) for the complete project list and usage notes.
 
 ## Automation Projects
 

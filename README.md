@@ -19,7 +19,7 @@ A structured collection of Python fundamentals, practice programs, and beginner-
 | 07 OOP | classes, objects, methods, state |
 | 08 Exceptions | safe input and error handling |
 | 09 Standard Library | random, secrets, pathlib |
-| 10 Mini Projects | expense tracker and to-do app |
+| 10 Mini Projects | 26 projects covering games, utilities, desktop tools, file tasks, and practical apps |
 | Automation Project | 10 practical automation projects for messaging, testing, search, email, backup, and hotword detection |
 
 ## Repository Structure
@@ -72,6 +72,14 @@ The goal of this repository is to build strong Python programming fundamentals t
 
 The original `average.py` and `temperature.py` files are kept as early learning exercises and historical progress.
 
+
+## Mini Projects
+
+The `10-mini-projects` section now includes the original Expense Tracker, To-Do CLI, and Contact Book plus 23 independently implemented project ideas covering games, PDF comparison, emoji conversion, audio/screen tools, notifications, weather, attendance, receipts, timers, and more.
+
+The earlier Number Guessing exercise was moved into this section instead of being duplicated. For the requested keylogger idea, the repository includes a safe foreground-only Keyboard Event Monitor rather than a system-wide keystroke logger.
+
+See [10-mini-projects/README.md](./10-mini-projects/README.md) for the full list.
 
 ## Automation Projects
 

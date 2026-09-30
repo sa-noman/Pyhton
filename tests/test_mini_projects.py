@@ -5,24 +5,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "10-mini-projects"
 
-def load(name, relative):
-    spec = importlib.util.spec_from_file_location(name, ROOT / relative / "main.py")
+def load(name, filename):
+    spec = importlib.util.spec_from_file_location(name, ROOT / filename)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
-number_guess = load("mini_number_guess", "01-number-guessing")
-rps = load("mini_rps", "05-rock-paper-scissors")
-pdfs = load("mini_pdfs", "06-compare-two-pdfs")
-mastermind = load("mini_mastermind", "10-mastermind")
-game2048 = load("mini_2048", "11-2048")
-flames = load("mini_flames", "12-flames")
-creature = load("mini_creature", "13-creature-training-game")
-weather = load("mini_weather", "16-live-weather-notifications")
-cows = load("mini_cows", "18-cows-and-bulls")
-attendance = load("mini_attendance", "19-attendance-tracker")
-higher = load("mini_higher", "20-higher-lower")
-receipt = load("mini_receipt", "22-payment-receipt")
+number_guess = load("mini_number_guess", "number_guessing.py")
+rps = load("mini_rps", "rock_paper_scissors.py")
+pdfs = load("mini_pdfs", "compare_two_pdfs.py")
+mastermind = load("mini_mastermind", "mastermind.py")
+game2048 = load("mini_2048", "game_2048.py")
+flames = load("mini_flames", "flames.py")
+creature = load("mini_creature", "creature_training_game.py")
+weather = load("mini_weather", "live_weather_notifications.py")
+cows = load("mini_cows", "cows_and_bulls.py")
+attendance = load("mini_attendance", "attendance_tracker.py")
+higher = load("mini_higher", "higher_lower.py")
+receipt = load("mini_receipt", "payment_receipt.py")
 
 class MiniProjectTests(unittest.TestCase):
     def test_number_guessing_compare(self):

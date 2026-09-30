@@ -1,0 +1,10 @@
+[
+  {
+    "page_id": "YOUR_PAGE_ID_1",
+    "message": "Scheduled update from my Python automation project."
+  },
+  {
+    "page_id": "YOUR_PAGE_ID_2",
+    "message": "Another example post. Dry-run before publishing."
+  }
+]

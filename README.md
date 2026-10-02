@@ -1,40 +1,16 @@
 # Python Fundamentals
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Focus](https://img.shields.io/badge/Focus-Programming%20Fundamentals-6C63FF)
+![Focus](https://img.shields.io/badge/Focus-Python%20Fundamentals-6C63FF)
 ![Tests](https://img.shields.io/badge/Tests-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
 
-A structured Python learning repository covering core programming concepts, problem solving, mini projects, automation, object-oriented programming, file handling, testing, and practical command-line applications.
-
-## Topics Covered
-
-| Section | Concepts |
-|---|---|
-| 01 Basics | input/output, variables, arithmetic, type conversion |
-| 02 Control Flow | conditions, loops, validation |
-| 03 Data Structures | lists, dictionaries, sets |
-| 04 Functions | reusable functions, recursion, algorithms |
-| 05 Strings | text processing, palindrome checks, statistics |
-| 06 File Handling | reading, writing, persistent notes |
-| 07 OOP | classes, objects, methods, state |
-| 08 Exceptions | safe input and error handling |
-| 09 Standard Library | random, secrets, pathlib |
-| 10 Mini Projects | 26 games, utilities, desktop tools, file tasks, and practical apps |
-| Automation Project | 10 automation projects for messaging, testing, search, email, backup, and hotword detection |
+A structured Python learning repository with a clean separation between language fundamentals, mini projects, and practical automation.
 
 ## Repository Structure
 
 ```text
 python-fundamentals/
-├── 01-basics/
-├── 02-control-flow/
-├── 03-data-structures/
-├── 04-functions/
-├── 05-strings/
-├── 06-file-handling/
-├── 07-oop/
-├── 08-exceptions/
-├── 09-standard-library/
+├── Python Basic/
 ├── 23 mini project/
 ├── Automation Project/
 ├── tests/
@@ -42,22 +18,28 @@ python-fundamentals/
 └── README.md
 ```
 
+## Python Basic
+
+`Python Basic` contains concept-focused examples only, not projects. It covers the core Python language syllabus from syntax and data types through control flow, functions, OOP, exceptions, file handling, modules, packages, and virtual environments.
+
+See [Python Basic/README.md](./Python%20Basic/README.md).
+
 ## Mini Projects
 
-The `23 mini project` folder contains 26 projects covering games, utilities, PDF comparison, emoji conversion, audio and screen tools, notifications, weather, attendance tracking, receipts, timers, task management, and more.
+`23 mini project` contains practical programs. The project-style files that were previously mixed into the old numbered fundamentals folders have been moved here.
 
-See [23 mini project/README.md](./23%20mini%20project/README.md) for the complete project list and usage notes.
+See [23 mini project/README.md](./23%20mini%20project/README.md).
 
 ## Automation Projects
 
-The `Automation Project` folder contains 10 projects covering social messaging workflows, birthday automation, automated software testing, browser search, email, backups, and hotword detection.
+`Automation Project` remains unchanged and contains 10 practical automation projects.
 
-See [Automation Project/README.md](./Automation%20Project/README.md) for project descriptions and usage details.
+See [Automation Project/README.md](./Automation%20Project/README.md).
 
-## Run a Program
+## Run an Example
 
 ```bash
-python 01-basics/calculator.py
+python "Python Basic/variables.py"
 ```
 
 ## Run Tests
@@ -65,7 +47,3 @@ python 01-basics/calculator.py
 ```bash
 python -m unittest discover -s tests -v
 ```
-
-## Learning Goal
-
-The repository is designed to strengthen Python fundamentals through small, readable, testable programs and practical projects that progress from basic syntax to real-world automation.

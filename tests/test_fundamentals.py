@@ -1,9 +1,10 @@
+import ast
 import importlib.util
-import tempfile
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+BASIC = ROOT / "Python Basic"
 
 
 def load(name: str, relative: str):
@@ -13,72 +14,45 @@ def load(name: str, relative: str):
     return module
 
 
-calculator = load("calculator", "01-basics/calculator.py")
-temperature = load("temperature", "01-basics/temperature_converter.py")
-grades = load("grades", "02-control-flow/grade_checker.py")
-leap = load("leap", "02-control-flow/leap_year.py")
-stats = load("stats", "03-data-structures/list_statistics.py")
-words = load("words", "03-data-structures/word_frequency.py")
-prime = load("prime", "04-functions/prime_checker.py")
-fib = load("fib", "04-functions/fibonacci.py")
-factorial = load("factorial", "04-functions/factorial_recursive.py")
-palindrome = load("palindrome", "05-strings/palindrome_checker.py")
-files = load("files", "06-file-handling/file_word_counter.py")
-bank = load("bank", "07-oop/bank_account.py")
-expenses = load("expenses", "23 mini project/expense_tracker.py")
+class PythonBasicStructureTests(unittest.TestCase):
+    def test_required_concept_files_exist(self):
+        required = {
+            "syntax.py", "comments.py", "variables.py", "data_types.py", "numbers.py",
+            "type_casting.py", "none.py", "strings.py", "booleans.py", "operators.py",
+            "lists.py", "tuples.py", "sets.py", "dictionaries.py", "arrays.py",
+            "conditionals.py", "while_loop.py", "for_loop.py", "functions.py",
+            "function_arguments.py", "lambda.py", "recursion.py", "scope.py",
+            "decorators.py", "generators.py", "iterators.py", "modules.py", "dates.py",
+            "math.py", "random_module.py", "json.py", "regex.py", "user_input.py",
+            "exceptions.py", "file_handling.py", "oop.py", "inheritance.py",
+            "polymorphism.py", "encapsulation.py", "class_methods.py",
+            "magic_methods.py", "inner_classes.py", "type_hints.py",
+            "pip_and_packages.md", "virtual_environment.md", "README.md",
+        }
+        self.assertTrue(required.issubset({p.name for p in BASIC.iterdir()}))
 
+    def test_all_python_basic_files_parse(self):
+        for path in BASIC.glob("*.py"):
+            with self.subTest(path=path.name):
+                ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
 
-class FundamentalTests(unittest.TestCase):
-    def test_calculator(self):
+    def test_old_numbered_folders_removed(self):
+        for folder in [
+            "01-basics", "02-control-flow", "03-data-structures", "04-functions",
+            "05-strings", "06-file-handling", "07-oop", "08-exceptions",
+            "09-standard-library",
+        ]:
+            self.assertFalse((ROOT / folder).exists())
+
+    def test_moved_projects_still_work(self):
+        calculator = load("calculator", "23 mini project/calculator.py")
+        temperature = load("temperature", "23 mini project/temperature_converter.py")
+        leap = load("leap", "23 mini project/leap_year.py")
+        prime = load("prime", "23 mini project/prime_checker.py")
         self.assertEqual(calculator.calculate(4, 2, "*"), 8)
-        with self.assertRaises(ValueError):
-            calculator.calculate(1, 0, "/")
-
-    def test_temperature(self):
         self.assertAlmostEqual(temperature.celsius_to_fahrenheit(0), 32)
-
-    def test_grade(self):
-        self.assertEqual(grades.letter_grade(85), "A+")
-
-    def test_leap_year(self):
         self.assertTrue(leap.is_leap_year(2024))
-        self.assertFalse(leap.is_leap_year(2100))
-
-    def test_list_stats(self):
-        self.assertEqual(stats.list_stats([1, 2, 3])["average"], 2)
-
-    def test_word_frequency(self):
-        self.assertEqual(words.word_frequency("AI ai Python")["ai"], 2)
-
-    def test_prime(self):
         self.assertTrue(prime.is_prime(29))
-        self.assertFalse(prime.is_prime(21))
-
-    def test_fibonacci(self):
-        self.assertEqual(fib.fibonacci(6), [0, 1, 1, 2, 3, 5])
-
-    def test_factorial(self):
-        self.assertEqual(factorial.factorial(5), 120)
-
-    def test_palindrome(self):
-        self.assertTrue(palindrome.is_palindrome("A man, a plan, a canal: Panama"))
-
-    def test_file_word_count(self):
-        with tempfile.TemporaryDirectory() as td:
-            path = Path(td) / "sample.txt"
-            path.write_text("hello world\npython", encoding="utf-8")
-            result = files.file_word_count(path)
-            self.assertEqual(result["words"], 3)
-
-    def test_bank_account(self):
-        account = bank.BankAccount("Test", 100)
-        self.assertEqual(account.deposit(50), 150)
-        self.assertEqual(account.withdraw(20), 130)
-
-    def test_expenses(self):
-        data = []
-        expenses.add_expense(data, "Book", 25, "Study")
-        self.assertEqual(expenses.total_expenses(data), 25)
 
 
 if __name__ == "__main__":

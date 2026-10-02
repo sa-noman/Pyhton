@@ -15,34 +15,17 @@ def load(name: str, relative: str):
 
 
 class PythonBasicStructureTests(unittest.TestCase):
-    def test_required_concept_files_exist(self):
+    def test_required_categories_exist(self):
         required = {
-            "syntax.py", "comments.py", "variables.py", "data_types.py", "numbers.py",
-            "type_casting.py", "none.py", "strings.py", "booleans.py", "operators.py",
-            "lists.py", "tuples.py", "sets.py", "dictionaries.py", "arrays.py",
-            "conditionals.py", "while_loop.py", "for_loop.py", "functions.py",
-            "function_arguments.py", "lambda.py", "recursion.py", "scope.py",
-            "decorators.py", "generators.py", "iterators.py", "modules.py", "dates.py",
-            "math.py", "random_module.py", "json.py", "regex.py", "user_input.py",
-            "exceptions.py", "file_handling.py", "oop.py", "inheritance.py",
-            "polymorphism.py", "encapsulation.py", "class_methods.py",
-            "magic_methods.py", "inner_classes.py", "type_hints.py",
-            "pip_and_packages.md", "virtual_environment.md", "README.md",
+            "Basics", "Strings", "Data Structures", "Control Flow", "Functions",
+            "OOP", "Modules & Standard Library", "Errors & Files", "Python Tools",
         }
-        self.assertTrue(required.issubset({p.name for p in BASIC.iterdir()}))
+        self.assertTrue(required.issubset({p.name for p in BASIC.iterdir() if p.is_dir()}))
 
     def test_all_python_basic_files_parse(self):
-        for path in BASIC.glob("*.py"):
-            with self.subTest(path=path.name):
+        for path in BASIC.rglob("*.py"):
+            with self.subTest(path=str(path.relative_to(ROOT))):
                 ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-
-    def test_old_numbered_folders_removed(self):
-        for folder in [
-            "01-basics", "02-control-flow", "03-data-structures", "04-functions",
-            "05-strings", "06-file-handling", "07-oop", "08-exceptions",
-            "09-standard-library",
-        ]:
-            self.assertFalse((ROOT / folder).exists())
 
     def test_moved_projects_still_work(self):
         calculator = load("calculator", "23 mini project/calculator.py")

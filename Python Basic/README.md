@@ -2,8 +2,45 @@
 
 This folder contains Python language fundamentals only. Mini projects and automation projects are kept separately.
 
-## Complete syllabus covered
+## Structure
 
-Syntax, comments, variables, variable naming, multiple assignment, global variables, data types, numbers, casting, None, strings, slicing, string methods, concatenation, formatting, escape characters, booleans, operators, lists, list methods, list comprehensions, tuples, tuple unpacking, sets, frozensets, dictionaries, nested dictionaries, dictionary comprehensions, arrays, if, elif, else, nested if, conditional expressions, match/case, while loops, for loops, range, break, continue, pass, loop else, functions, arguments, default arguments, keyword arguments, *args, **kwargs, return values, lambda, recursion, scope, decorators, generators, iterators, modules/imports, dates, math, random, JSON, regular expressions, user input, try/except/else/finally, raise, file handling, classes, objects, __init__, self, properties, instance/class/static methods, inheritance, polymorphism, encapsulation, magic methods, inner classes, type hints, pip/packages, and virtual environments.
+```text
+Python Basic/
+├── Basics/
+├── Strings/
+├── Data Structures/
+├── Control Flow/
+├── Functions/
+├── OOP/
+├── Modules & Standard Library/
+├── Errors & Files/
+├── Python Tools/
+└── README.md
+```
 
-Each Python file is a small concept-focused example, not a project.
+### Basics
+Syntax, comments, variables, data types, numbers, type casting, None, booleans, operators, and user input.
+
+### Strings
+String indexing, slicing, methods, concatenation, formatting, and escape characters.
+
+### Data Structures
+Lists, tuples, sets, frozensets, dictionaries, comprehensions, and arrays.
+
+### Control Flow
+If, elif, else, nested conditions, conditional expressions, match/case, for loops, while loops, range, break, continue, pass, and loop else.
+
+### Functions
+Functions, arguments, default and keyword arguments, *args, **kwargs, return values, lambda, recursion, scope, decorators, and generators.
+
+### OOP
+Classes, objects, __init__, self, properties, methods, inheritance, polymorphism, encapsulation, class methods, static methods, magic methods, and inner classes.
+
+### Modules & Standard Library
+Iterators, modules/imports, dates, math, random, JSON, and regular expressions.
+
+### Errors & Files
+Exception handling, raise, and file handling.
+
+### Python Tools
+Type hints, pip/packages, and virtual environments.

@@ -11,18 +11,18 @@ def load(name, filename):
     spec.loader.exec_module(module)
     return module
 
-number_guess = load("mini_number_guess", "number_guessing.py")
-rps = load("mini_rps", "rock_paper_scissors.py")
-pdfs = load("mini_pdfs", "compare_two_pdfs.py")
-mastermind = load("mini_mastermind", "mastermind.py")
-game2048 = load("mini_2048", "game_2048.py")
-flames = load("mini_flames", "flames.py")
-creature = load("mini_creature", "creature_training_game.py")
-weather = load("mini_weather", "live_weather_notifications.py")
-cows = load("mini_cows", "cows_and_bulls.py")
-attendance = load("mini_attendance", "attendance_tracker.py")
-higher = load("mini_higher", "higher_lower.py")
-receipt = load("mini_receipt", "payment_receipt.py")
+number_guess = load("mini_number_guess", "Games/number_guessing.py")
+rps = load("mini_rps", "Games/rock_paper_scissors.py")
+pdfs = load("mini_pdfs", "File & Data/compare_two_pdfs.py")
+mastermind = load("mini_mastermind", "Games/mastermind.py")
+game2048 = load("mini_2048", "Games/game_2048.py")
+flames = load("mini_flames", "Games/flames.py")
+creature = load("mini_creature", "Games/creature_training_game.py")
+weather = load("mini_weather", "Desktop Tools/live_weather_notifications.py")
+cows = load("mini_cows", "Games/cows_and_bulls.py")
+attendance = load("mini_attendance", "File & Data/attendance_tracker.py")
+higher = load("mini_higher", "Games/higher_lower.py")
+receipt = load("mini_receipt", "CLI Tools/payment_receipt.py")
 
 class MiniProjectTests(unittest.TestCase):
     def test_number_guessing_compare(self):

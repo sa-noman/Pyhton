@@ -28,10 +28,10 @@ class PythonBasicStructureTests(unittest.TestCase):
                 ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
 
     def test_moved_projects_still_work(self):
-        calculator = load("calculator", "23 mini project/calculator.py")
-        temperature = load("temperature", "23 mini project/temperature_converter.py")
-        leap = load("leap", "23 mini project/leap_year.py")
-        prime = load("prime", "23 mini project/prime_checker.py")
+        calculator = load("calculator", "23 mini project/Utilities/calculator.py")
+        temperature = load("temperature", "23 mini project/Utilities/temperature_converter.py")
+        leap = load("leap", "23 mini project/Beginner Practice/leap_year.py")
+        prime = load("prime", "23 mini project/Utilities/prime_checker.py")
         self.assertEqual(calculator.calculate(4, 2, "*"), 8)
         self.assertAlmostEqual(temperature.celsius_to_fahrenheit(0), 32)
         self.assertTrue(leap.is_leap_year(2024))

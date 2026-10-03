@@ -1,23 +1,89 @@
 # Python Mini Projects
 
-This folder contains practical Python programs and mini projects. Language-concept examples live separately in `Python Basic`.
+A collection of practical Python programs organized by category.
 
-## Projects
+## Structure
 
-The original 26 mini projects remain here, and the project-style programs from the old fundamentals folders have also been moved here.
-
-### Original collection
-Number Guessing, Word Guessing, Hangman, 21 Number Game, Rock Paper Scissors, Compare Two PDFs, Emoji to Text, Voice Recorder, Screen Recorder, Mastermind, 2048 Logic, FLAMES, Creature Training Game, Screenshot Tool, Desktop Notifier, Live Weather Notifications, Keyboard Event Monitor, Cows and Bulls, Attendance Tracker, Higher-Lower, Fun Fact Generator, Payment Receipt, Countdown Timer, Expense Tracker, To-Do CLI, and Contact Book.
-
-### Moved practice programs
-Average Calculator, Calculator, Temperature Converter, Grade Checker, Leap Year Checker, List Statistics, Set Operations, Word Frequency, Recursive Factorial, Fibonacci, Prime Checker, Palindrome Checker, Text Analyzer, File Word Counter, Notes Manager, Bank Account, Student Record, Input Validation, Safe Division, Password Generator, and Random Choice.
-
-## Run a Project
-
-```bash
-python "23 mini project/calculator.py"
-python "23 mini project/expense_tracker.py"
+```text
+23 mini project/
+├── Games/
+├── Utilities/
+├── CLI Tools/
+├── File & Data/
+├── Desktop Tools/
+├── Beginner Practice/
+├── requirements.txt
+└── README.md
 ```
+
+## Games
+
+- Cows and Bulls
+- Creature Training Game
+- FLAMES
+- 2048 Game Logic
+- Hangman
+- Higher-Lower Game
+- Mastermind
+- 21 Number Game
+- Number Guessing Game
+- Rock Paper Scissors
+- Word Guessing Game
+
+## Utilities
+
+- Average Calculator
+- Calculator
+- Countdown Timer
+- Fun Fact Generator
+- Password Generator
+- Prime Checker
+- Random Choice
+- Temperature Converter
+
+## CLI Tools
+
+- Contact Book
+- Expense Tracker
+- Notes Manager
+- Payment Receipt Generator
+- Student Record
+- To-Do CLI
+
+## File & Data
+
+- Attendance Tracker
+- Compare Two PDFs
+- Emoji to Text
+- File Word Counter
+- List Statistics
+- Set Operations
+- Text Analyzer
+- Word Frequency
+
+## Desktop Tools
+
+- Desktop Notifier
+- Keyboard Event Monitor
+- Live Weather Notifications
+- Screen Recorder
+- Screenshot Tool
+- Voice Recorder
+
+## Beginner Practice
+
+- Bank Account
+- Recursive Factorial
+- Fibonacci
+- Grade Checker
+- Input Validation
+- Leap Year Checker
+- Palindrome Checker
+- Safe Division
+
+## Total
+
+47 Python programs.
 
 ## Optional Dependencies
 

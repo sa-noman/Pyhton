@@ -20,26 +20,26 @@ python-fundamentals/
 
 ## Python Basic
 
-`Python Basic` contains concept-focused examples only, not projects. It covers the core Python language syllabus from syntax and data types through control flow, functions, OOP, exceptions, file handling, modules, packages, and virtual environments.
+`Python Basic` contains concept-focused examples only, not projects. It covers the core Python language from syntax and data types through control flow, functions, OOP, exceptions, file handling, modules, packages, and virtual environments.
 
 See [Python Basic/README.md](./Python%20Basic/README.md).
 
 ## Mini Projects
 
-`23 mini project` contains practical programs. The project-style files that were previously mixed into the old numbered fundamentals folders have been moved here.
+`23 mini project` contains 47 practical Python programs organized into Games, Utilities, CLI Tools, File & Data, Desktop Tools, and Beginner Practice.
 
 See [23 mini project/README.md](./23%20mini%20project/README.md).
 
 ## Automation Projects
 
-`Automation Project` remains unchanged and contains 10 practical automation projects.
+`Automation Project` contains 10 practical automation projects.
 
 See [Automation Project/README.md](./Automation%20Project/README.md).
 
 ## Run an Example
 
 ```bash
-python "Python Basic/variables.py"
+python "Python Basic/Basics/variables.py"
 ```
 
 ## Run Tests
